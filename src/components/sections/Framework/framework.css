@@ -1,0 +1,522 @@
+/* =========================================================
+   FRAMEWORK SECTION
+   ========================================================= */
+
+.framework-section {
+    width: 100%;
+    background: #f8f4ea;
+    padding: 58px 0 64px;
+    overflow: hidden;
+}
+
+/* Same visual width as Challenges */
+.framework-container {
+    width: min(1200px, calc(100% - 64px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.framework-header {
+    max-width: 900px;
+    margin-bottom: 32px;
+}
+
+.framework-kicker {
+display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color: #486581;
+}
+.framework-number {
+    font-size: 16px;
+
+    font-weight: 800;
+
+    color: #1d668a;
+}
+
+.framework-header-line {
+    width: 100%;
+
+    height: 1px;
+
+    margin-top: 14px;
+
+    background: rgba(16, 42, 67, 0.12);
+    margin-bottom:35px;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.framework-title {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(42px, 3.5vw, 52px);
+
+    font-weight: 700;
+
+    line-height: 1.02;
+
+    letter-spacing: -0.025em;
+
+    color: #102a43;
+}
+
+.framework-title__accent {
+    color: #d4af37;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.framework-description {
+    max-width: 780px;
+
+    margin: 16px 0 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #486581;
+}
+
+
+/* =========================================================
+   FRAMEWORK BOX
+   ========================================================= */
+
+.framework-box {
+    /* width: 100%; */
+
+    padding: 38px 28px 34px;
+
+    background: #102a43;
+
+    border-radius: 22px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow: 0 16px 35px rgba(16, 42, 67, 0.10);
+}
+
+
+/* =========================================================
+   DECORATIVE CIRCLES
+   ========================================================= */
+
+.framework-box::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    top: -190px;
+    right: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(212, 175, 55, 0.045);
+
+    pointer-events: none;
+}
+
+.framework-box::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    bottom: -140px;
+    left: -90px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   STEPS
+   ========================================================= */
+
+.framework-steps {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    align-items: start;
+
+    gap: 0;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   STEP
+   ========================================================= */
+
+.framework-step {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   VISUAL AREA
+   ========================================================= */
+
+.framework-step__visual {
+    width: 100%;
+
+    height: 105px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   CONNECTING LINE
+   ========================================================= */
+
+.framework-step:not(:last-child) .framework-step__visual::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: calc(50% + 42px);
+
+    width: calc(100% - 84px);
+
+    height: 2px;
+
+    background: #d4af37;
+
+    opacity: 0.8;
+
+    transform: translateY(-50%);
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   MAIN CIRCLE
+   ========================================================= */
+
+.framework-step__circle {
+    width: 84px;
+    height: 84px;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(212, 175, 55, 0.8);
+
+    box-shadow:
+        0 0 0 7px rgba(212, 175, 55, 0.035);
+
+    z-index: 2;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   INNER GOLD CIRCLE
+   ========================================================= */
+
+.framework-step__circle::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(212, 175, 55, 0.32);
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.framework-step__icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #f8f4ea;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.framework-step__icon svg {
+    width: 32px;
+    height: 32px;
+
+    stroke: currentColor;
+
+    stroke-width: 1.8;
+}
+
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.framework-step__number {
+    position: absolute;
+
+    top: -13px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #d4af37;
+
+    color: #102a43;
+
+    border: 2px solid #102a43;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    z-index: 5;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================================
+   STEP TITLE
+   ========================================================= */
+
+.framework-step__title {
+    max-width: 145px;
+
+    margin: 16px auto 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(21px, 1.55vw, 25px);
+
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.01em;
+
+    color: #f8f4ea;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.framework-step:hover .framework-step__circle {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 0 7px rgba(212, 175, 55, 0.07),
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .framework-container {
+        width: calc(100% - 70px);
+    }
+
+    .framework-box {
+        padding: 34px 20px 32px;
+    }
+
+    .framework-step__circle {
+        width: 78px;
+        height: 78px;
+    }
+
+    .framework-step:not(:last-child) .framework-step__visual::after {
+        left: calc(50% + 39px);
+
+        width: calc(100% - 78px);
+    }
+
+    .framework-step__title {
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .framework-section {
+        padding: 52px 0 60px;
+    }
+
+    .framework-container {
+        width: calc(100% - 40px);
+    }
+
+    .framework-steps {
+        grid-template-columns: repeat(3, 1fr);
+
+        row-gap: 38px;
+    }
+
+    .framework-step:not(:last-child) .framework-step__visual::after {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .framework-section {
+        padding: 46px 0 55px;
+    }
+
+    .framework-container {
+        width: calc(100% - 30px);
+    }
+
+    .framework-header {
+        margin-bottom: 26px;
+    }
+
+    .framework-title {
+        font-size: clamp(36px, 9vw, 44px);
+    }
+
+    .framework-description {
+        font-size: 14px;
+    }
+
+    .framework-box {
+        padding: 32px 12px;
+        border-radius: 18px;
+    }
+
+    .framework-steps {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 35px;
+    }
+
+    .framework-step__visual {
+        height: 100px;
+    }
+
+    .framework-step__circle {
+        width: 76px;
+        height: 76px;
+    }
+
+    .framework-step__title {
+        max-width: 125px;
+
+        font-size: 20px;
+
+        margin-top: 14px;
+    }
+}

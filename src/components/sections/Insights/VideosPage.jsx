@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { ArrowDown, ArrowLeft, BriefcaseBusiness, Crown, Gauge, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { insightsData } from "./insightsData";
@@ -6,10 +5,6 @@ import VideoCard from "./VideoCard";
 import "./VideosPage.css";
 
 function VideosPage() {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-    }, []);
-
     return (
         <main className="videos-page">
             <div className="videos-page__container">

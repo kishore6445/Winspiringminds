@@ -13,7 +13,7 @@ function Insights() {
                     <div>
                         <div className="insights-kicker"><span>{section.number}</span><span>/</span><span>{section.label.toUpperCase()}</span></div>
                         <div className="insights-header-line" />
-                        <h2 className="insights__title">Every business challenge has a <span>people story.</span></h2>
+                        <h2 className="insights__title">Leadership is not learned once. It is <span>developed every day.</span></h2>
                         <p className="insights__intro">{section.description}</p>
                     </div>
                 </header>

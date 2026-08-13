@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { challengesData } from "./challengesData";
-import "./Challenges.css";
+import "./challenges.css";
 
 const Challenges = () => {
   const [activeChallenge, setActiveChallenge] = useState(0);

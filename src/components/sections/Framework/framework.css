@@ -4,7 +4,7 @@
 
 .framework-section {
     width: 100%;
-    background: #f8f4ea;
+    background: #ffffff;
     padding: 58px 0 64px;
     overflow: hidden;
 }
@@ -68,7 +68,7 @@ display: flex;
 .framework-title {
     margin: 0;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Manrope", sans-serif;
 
     font-size: clamp(42px, 3.5vw, 52px);
 
@@ -382,7 +382,7 @@ display: flex;
 
     margin: 16px auto 0;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Manrope", sans-serif;
 
     font-size: clamp(21px, 1.55vw, 25px);
 

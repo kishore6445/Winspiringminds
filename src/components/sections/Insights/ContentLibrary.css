@@ -1,0 +1,15 @@
+.content-library { min-height: 100vh; padding: 124px 0 120px; background: #fff; color: #102a43; }
+.content-library__container { width: min(1100px, calc(100% - 64px)); margin: 0 auto; }
+.content-library__back { display: inline-flex; align-items: center; gap: 8px; color: #1d668a; font: 800 12px/1 "Manrope", sans-serif; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+.content-library__hero { max-width: 790px; margin: 80px 0 88px; }
+.content-library__icon { display: grid; width: 52px; height: 52px; margin-bottom: 28px; place-items: center; border-radius: 50%; background: #eef1f4; color: #1d668a; }
+.content-library__eyebrow, .content-library__meta { color: #1d668a; font: 800 12px/1.2 "Manrope", sans-serif; letter-spacing: .15em; text-transform: uppercase; }
+.content-library h1 { margin: 16px 0; font: 700 clamp(50px, 7vw, 88px)/.98 "Manrope", sans-serif; letter-spacing: -.06em; }
+.content-library__hero p { max-width: 650px; margin: 0; color: #486581; font: 400 18px/1.65 "Manrope", sans-serif; }
+.content-library__list { border-top: 1px solid rgba(16,42,67,.16); }
+.content-library__item { display: grid; grid-template-columns: 70px 1fr 42px; gap: 26px; align-items: center; padding: 34px 0; border-bottom: 1px solid rgba(16,42,67,.12); }
+.content-library__number { color: #1d668a; font: 800 13px/1 "Manrope", sans-serif; letter-spacing: .1em; }
+.content-library__item h2 { margin: 10px 0 8px; font: 700 clamp(24px, 3vw, 38px)/1.08 "Manrope", sans-serif; letter-spacing: -.04em; }
+.content-library__item p { margin: 0; color: #486581; font: 400 14px/1.6 "Manrope", sans-serif; }
+.content-library__item button { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid rgba(29,102,138,.25); border-radius: 50%; background: transparent; color: #1d668a; }
+@media (max-width: 620px) { .content-library { padding: 88px 0 90px; } .content-library__container { width: calc(100% - 32px); } .content-library__hero { margin: 56px 0 64px; } .content-library h1 { font-size: 48px; } .content-library__hero p { font-size: 15px; } .content-library__item { grid-template-columns: 32px 1fr 34px; gap: 12px; padding: 26px 0; } .content-library__item button { width: 34px; height: 34px; } }

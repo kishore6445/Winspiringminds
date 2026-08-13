@@ -127,8 +127,8 @@
     margin: 25px 0 25px;
 
     font-family:
-        "Cormorant Garamond",
-        serif;
+        "Manrope",
+        sans-serif;
 
     font-size:
         clamp(62px, 5.5vw, 84px);
@@ -363,8 +363,8 @@
     margin: 22px 0 20px;
 
     font-family:
-        "Cormorant Garamond",
-        serif;
+        "Manrope",
+        sans-serif;
 
     font-size:
         clamp(27px, 2.25vw, 34px);

@@ -32,7 +32,7 @@ const navLinks = [
     },
 ];
 
-function Navbar() {
+function Navbar({ light = false }) {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -70,7 +70,7 @@ function Navbar() {
     return (
         <>
             <header
-                className={`navbar ${
+                className={`navbar ${light ? "navbar--light" : ""} ${
                     isScrolled
                         ? "navbar--scrolled"
                         : ""

@@ -27,6 +27,18 @@
   SCROLLED NAVBAR
 ==================================================*/
 
+.navbar--light {
+    background: rgba(255, 255, 255, .94);
+    border-bottom: 1px solid rgba(16, 42, 67, .07);
+    box-shadow: 0 8px 30px rgba(16, 42, 67, .05);
+}
+
+.navbar--light .navbar__logo-title,
+.navbar--light .navbar__link,
+.navbar--light .navbar__mobile-toggle {
+    color: #102a43;
+}
+
 .navbar--scrolled {
     background: rgba(255, 255, 255, .94);
 

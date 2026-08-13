@@ -9,9 +9,9 @@
 
     padding: 82px 0 88px;
 
-    background: #102a43;
+    background: #ffffff;
 
-    color: #f8f4ea;
+    color: #102a43;
 
     overflow: hidden;
 }
@@ -97,8 +97,8 @@
     margin: 20px 0 0;
 
     font-family:
-        "Cormorant Garamond",
-        serif;
+        "Manrope",
+        sans-serif;
 
     font-size:
         clamp(42px, 4vw, 56px);
@@ -109,7 +109,7 @@
 
     letter-spacing: -0.032em;
 
-    color: #f8f4ea;
+    color: #102a43;
 }
 
 .cta-heading span {
@@ -137,7 +137,7 @@
     line-height: 1.7;
 
     color:
-        rgba(248, 244, 234, 0.68);
+        #617786;
 }
 
 

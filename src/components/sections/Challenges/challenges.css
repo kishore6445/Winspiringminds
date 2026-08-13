@@ -9,7 +9,7 @@
 
     padding: 72px 0 78px;
 
-    background: #f8f4ea;
+    background: #ffffff;
 
     color: #102a43;
 
@@ -89,7 +89,7 @@
 
     margin: 21px 0 11px;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Manrope", sans-serif;
 
     font-size: clamp(42px, 4vw, 56px);
 
@@ -489,7 +489,7 @@
 
     margin: 0 0 24px;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Manrope", sans-serif;
 
     font-size: clamp(32px, 3vw, 42px);
 
@@ -633,7 +633,7 @@
 .challenges-closing {
     margin: 28px 0 0;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Manrope", sans-serif;
 
     font-size: clamp(23px, 2vw, 29px);
 

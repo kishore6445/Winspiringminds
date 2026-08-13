@@ -9,7 +9,7 @@
 
     padding: 92px 0 88px;
 
-    background: #f8f5ef;
+    background: #ffffff;
 
     color: #102a43;
 
@@ -195,8 +195,8 @@
 
 .about-experience-number {
     font-family:
-        "Cormorant Garamond",
-        serif;
+        "Manrope",
+        sans-serif;
 
     font-size: 44px;
 
@@ -302,8 +302,8 @@
     margin: 0 0 24px;
 
     font-family:
-        "Cormorant Garamond",
-        serif;
+        "Manrope",
+        sans-serif;
 
     font-size:
         clamp(42px, 4vw, 56px);
@@ -448,8 +448,8 @@
     margin: 1px 0 5px;
 
     font-family:
-        "Cormorant Garamond",
-        serif;
+        "Manrope",
+        sans-serif;
 
     font-size: 22px;
 
@@ -510,8 +510,8 @@
     margin: 0 0 2px;
 
     font-family:
-        "Cormorant Garamond",
-        serif;
+        "Manrope",
+        sans-serif;
 
     font-size: 25px;
 

@@ -8,7 +8,7 @@ function VideosPage() {
     return (
         <main className="videos-page">
             <div className="videos-page__container">
-                <Link to="/insights" className="videos-page__back"><ArrowLeft size={17} /> Back to Insights</Link>
+                <Link to="/#insights" className="videos-page__back"><ArrowLeft size={17} /> Back to Insights</Link>
                 <div className="videos-page__kicker">Leadership video library</div>
                 <h1>Leadership videos for the work that matters.</h1>
                 <p className="videos-page__intro">A practical library of ideas, frameworks and conversations to help leaders build better organisations.</p>

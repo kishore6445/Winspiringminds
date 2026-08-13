@@ -35,7 +35,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/insights" element={<><Navbar light /><Insights /></>} />
+                <Route path="/insights" element={<HomePage />} />
                 <Route path="/insights/videos" element={<><Navbar light /><VideosPage /></>} />
                 <Route path="/insights/articles" element={<><Navbar light /><ContentLibrary type="articles" /></>} />
                 <Route path="/insights/reflections" element={<><Navbar light /><ContentLibrary type="reflections" /></>} />

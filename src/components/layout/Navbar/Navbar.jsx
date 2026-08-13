@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import Button from "../../common/Button/Button";
 
@@ -33,6 +34,9 @@ const navLinks = [
 ];
 
 function Navbar({ light = false }) {
+    const location = useLocation();
+    const isHome = location.pathname === "/";
+    const sectionHref = (href) => isHome ? href : `/${href}`;
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -81,7 +85,7 @@ function Navbar({ light = false }) {
                     {/* Logo */}
 
                     <a
-                        href="#home"
+                        href={sectionHref("#home")}
                         className="navbar__logo"
                         onClick={closeMenu}
                     >
@@ -106,7 +110,7 @@ function Navbar({ light = false }) {
                                     className="navbar__item"
                                 >
                                     <a
-                                        href={link.href}
+                                        href={sectionHref(link.href)}
                                         className="navbar__link"
                                     >
                                         {link.label}
@@ -128,7 +132,7 @@ function Navbar({ light = false }) {
                                     ? "dark"
                                     : "primary"
                             }
-                            href="#contact"
+                            href={sectionHref("#contact")}
                             className="navbar__cta"
                         >
                             Let's Talk
@@ -176,7 +180,7 @@ function Navbar({ light = false }) {
                     <div className="mobile-menu__header">
 
                         <a
-                            href="#home"
+                            href={sectionHref("#home")}
                             className="mobile-menu__logo"
                             onClick={closeMenu}
                         >
@@ -200,7 +204,7 @@ function Navbar({ light = false }) {
                         {navLinks.map((link) => (
                             <a
                                 key={link.label}
-                                href={link.href}
+                                href={sectionHref(link.href)}
                                 className="mobile-menu__link"
                                 onClick={closeMenu}
                             >
@@ -221,7 +225,7 @@ function Navbar({ light = false }) {
 
                         <Button
                             variant="dark"
-                            href="#contact"
+                            href={sectionHref("#contact")}
                             className="mobile-menu__cta"
                             onClick={closeMenu}
                         >
